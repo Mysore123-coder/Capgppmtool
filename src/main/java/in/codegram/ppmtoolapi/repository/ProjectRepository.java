@@ -9,5 +9,7 @@ import in.codegram.ppmtoolapi.domain.Project;
 public interface ProjectRepository extends CrudRepository<Project, Long>{
 
 	//TODO: No need to add any CRUD method, methods can be customized
+	
+	Project findByProjectIdentifier(String projectIdentifier);	
 
 }
